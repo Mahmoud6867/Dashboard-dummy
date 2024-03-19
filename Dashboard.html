@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Dashboard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- Main container -->
+  <div class="mainContainer">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <!-- sidebar title and button -->
+      <div style="padding: 10%">
+        <!-- sidebarTitle -->
+        <div class="sidebarTitle">
+          <img src="./Assets/box.svg" alt="BOX" />
+          <p style="font: 800 25px lato; color: #57acdc;margin-left:5px">Droppex</p>
+        </div>
+
+        <!-- new folder button -->
+        <button class="newFolderButton">
+          <img src="./Assets/folder.svg" alt="folder" />
+          <p>New folder</p>
+        </button>
+      </div>
+      <!-- sidebar tabs -->
+      <div class="sidebarTabs">
+        <!-- home tab -->
+        <button class="tab">
+          <div class="sidebarTabSideLine"></div>
+          <img style="margin-left: 10%" src="./Assets/home.svg" alt="folder" />
+          <p style="margin-left: 20px; color: #57acdc; font-weight: bold">
+            Home
+          </p>
+        </button>
+
+        <!-- trash tab -->
+        <button class="tab">
+          <div class="sidebarTabSideLine" style="background-color: #121212"></div>
+          <img style="margin-left: 10%" src="./Assets/trash.svg" alt="folder" />
+          <p style="margin-left: 20px">Trash</p>
+        </button>
+      </div>
+      <!-- storage -->
+      <div>
+        <!-- storage title -->
+        <div class="tab">
+          <div class="sidebarTabSideLine" style="background-color: #121212"></div>
+          <img style="margin-left: 10%" src="./Assets/cloud.svg" alt="folder" />
+          <p style="margin-left: 20px">Storage</p>
+        </div>
+        <!-- chart container -->
+        <div class="chartContainer">
+          <!-- donutChart -->
+          <div class="donutChart">
+            <div class="donut"></div>
+          </div>
+          <!-- text under donut chart -->
+          <p style="text-align: center;">10GB / 100GB</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- main page -->
+    <div class="mainPage">
+      <!-- top bar -->
+      <div class="topBar">
+        <!-- search -->
+        <div class="searchBar">
+          <div class="searchIcon">
+          <div><img style="margin-right: 10px; margin-left:10px;" src="./Assets/search.svg" alt="search" /></div>
+          <p>Search for file, folder, shared storehouse</p>
+        </div>
+          <div><img src="./Assets/settings.svg" alt="settings" /></div>
+        </div>
+        <!-- upload -->
+        <div class="upload">
+          <img style="margin-right: 10px; margin-left:10px;" src="./Assets/cloud-upload.svg" alt="cloud-upload" />
+          <p>Drag and drop&nbsp;
+          <p class="uploadLinks">files</p>&nbsp; , &nbsp; <p class="uploadLinks">folders</p>&nbsp; or &nbsp; <p class="uploadLinks">links</p>
+          </p>
+        </div>
+        <!-- link icon -->
+        <div class="link"><img src="./Assets/link.svg" alt="link"/></div>
+        <!-- profile icon -->
+        <div style="background-color: #242e33 ; padding:10px;border-radius:50%;"><img src="./Assets/profile.svg" alt="profile"/></div>
+      </div>
+
+      <!-- second bar -->
+      <div class="secondBar">
+        <p>Ramy Main Drive</p>
+        <img src="./Assets/info.svg" alt="info"/>
+      </div>
+
+      <!-- third bar -->
+      <div class="thirdBar">
+
+        <!-- foldersPreviewMainTitle -->
+        <div class="foldersPreviewMainTitle">
+          <p>Select folder or file to see options</p>
+          <p>No item selected</p>
+        </div>
+
+        <!-- filter-order -->
+        <div class="filter-order">
+          <img src="./Assets/up-down-arrows.svg" alt="upDownArrows"/>
+          <img src="./Assets/filter.svg" alt="upDownArrows"/>
+        </div>
+
+        <!-- optionsIcons -->
+        <div class="optionsIcons">
+          <img src="./Assets/eye.svg" alt="eye"/>
+          <img src="./Assets/checkSquare.svg" alt="checkSquare"/>
+          <img src="./Assets/rectangle.svg" alt="rectangle"/>
+          <img src="./Assets/backArrow.svg" alt="backArrow"/>
+        </div>
+
+
+      </div>
+      <!-- fourth bar -->
+      <div class="fourthBar">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <p style="margin-left: 30px; color:#939393">Name</p>
+        </div>
+        <div class="uploadStyle"><p>Uploaded</p></div>
+        <div class="uploadStyle"><p>Size</p></div>
+        <div class="uploadStyle"><p>View No.</p></div>
+        <div class="nameStyle" style="justify-content: space-between;">
+          <p style="color: #939393;">Last modified</p>
+          <img src="./Assets/downArrow.svg" alt="downArrow"/>
+        </div>
+      </div>
+
+      <!-- folders -->
+      <div class="folders">
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img1.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img2.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img3.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img4.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img5.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img6.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img7.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img8.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img9.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img10.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img9.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img10.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- transparent -->
+      <div class="transparentFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img9.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+      <!-- gray -->
+      <div class="grayFolder">
+        <div class="nameStyle">
+          <div class="checkboxStyle" type="checkbox"></div>
+          <div class="notificationDot"></div>
+          <img src="./Assets/img10.png" alt="image"/>
+          <p>Name</p>
+        </div>
+        <div class="uploadStyle"><p>Nov 26, 2022 3:18AM</p></div>
+        <div class="uploadStyle"><p>1.8 MB</p></div>
+        <div class="uploadStyle"><p>2 times</p></div>
+        <div class="uploadStyle"><p>Dec 10, 2022 2:00PM user1@gmail</p></div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>
